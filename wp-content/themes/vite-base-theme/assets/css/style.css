@@ -51,7 +51,7 @@ body {
   @apply text-black;
 }
 a {
-  @apply !no-underline !text-white;
+  @apply !no-underline text-white;
 }
 /* Container Configuration */
 @utility container {

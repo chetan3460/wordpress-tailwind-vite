@@ -1,9 +1,67 @@
 {
+  "_autoplay-chunk-v1.0.0.js": {
+    "file": "js/autoplay-chunk-v1.0.0.js",
+    "name": "autoplay"
+  },
+  "js/components/BannerSlider.js": {
+    "file": "js/BannerSlider-chunk-v1.0.0.js",
+    "name": "BannerSlider",
+    "src": "js/components/BannerSlider.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_autoplay-chunk-v1.0.0.js",
+      "js/main.js"
+    ]
+  },
+  "js/components/CustomContainer.js": {
+    "file": "js/CustomContainer-chunk-v1.0.0.js",
+    "name": "CustomContainer",
+    "src": "js/components/CustomContainer.js",
+    "isDynamicEntry": true
+  },
+  "js/components/Header.js": {
+    "file": "js/Header-chunk-v1.0.0.js",
+    "name": "Header",
+    "src": "js/components/Header.js",
+    "isDynamicEntry": true
+  },
+  "js/components/LazyLoading.js": {
+    "file": "js/LazyLoading-chunk-v1.0.0.js",
+    "name": "LazyLoading",
+    "src": "js/components/LazyLoading.js",
+    "isDynamicEntry": true
+  },
+  "js/components/SliderBlock.js": {
+    "file": "js/SliderBlock-chunk-v1.0.0.js",
+    "name": "SliderBlock",
+    "src": "js/components/SliderBlock.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_autoplay-chunk-v1.0.0.js"
+    ]
+  },
+  "js/components/TestBlock.js": {
+    "file": "js/TestBlock-chunk-v1.0.0.js",
+    "name": "TestBlock",
+    "src": "js/components/TestBlock.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_autoplay-chunk-v1.0.0.js"
+    ]
+  },
   "js/main.js": {
     "file": "js/main-v1.0.0.js",
     "name": "main",
     "src": "js/main.js",
     "isEntry": true,
+    "dynamicImports": [
+      "js/components/BannerSlider.js",
+      "js/components/CustomContainer.js",
+      "js/components/Header.js",
+      "js/components/LazyLoading.js",
+      "js/components/SliderBlock.js",
+      "js/components/TestBlock.js"
+    ],
     "css": [
       "css/style-v1.0.0.css"
     ]
