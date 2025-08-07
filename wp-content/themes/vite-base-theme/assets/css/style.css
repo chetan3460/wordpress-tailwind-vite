@@ -1,5 +1,27 @@
-@import "topnav.css";
+/* // FONTS */
+@import "./custom/_fonts.css";
+
+/* // general */
+@import "./custom/_general.css";
+
+/* // structure */
+@import "./custom/structure/_topnav.css";
+@import "./custom/structure/_footer.css";
+
+/* // pages */
+@import "./custom/pages/_helper.css";
+@import "./custom/pages/_hero.css";
+@import "./custom/pages/_countdown.css";
+@import "./custom/pages/_contact.css";
+
+/* // Plugins */
+@import "./custom/plugins/_swiper-slider.css";
+@import "./custom/plugins/_datepicker.css";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@config "../../tailwind.config.js";
+
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Tailwind v4 Theme Configuration */
@@ -48,11 +70,9 @@
   --shadow-testi: 2px 2px 2px -1px rgb(60 72 88 / 0.15);
 }
 body {
-  @apply text-black;
+  @apply text-black font-family-nunito;
 }
-a {
-  @apply !no-underline text-white;
-}
+
 /* Container Configuration */
 @utility container {
   padding-inline: 15px;

@@ -3,11 +3,28 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-url" content="<?php echo esc_url(get_template_directory_uri()); ?>">
+
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+
+
     <?php wp_head(); ?>
 </head>
 
+
 <body <?php body_class(); ?>>
+
+
+    <script type="text/javascript">
+        var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+    </script>
 
     <header id="header" class="bg-amber-300">
         <nav id="topnav" class="defaultscroll is-sticky">
@@ -42,7 +59,6 @@
                         'fallback_cb' => false,
                     ]);
                     ?>
-
                 </div>
             </div>
         </nav>

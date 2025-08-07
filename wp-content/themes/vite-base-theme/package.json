@@ -22,6 +22,7 @@
     "vite-plugin-live-reload": "^3.0.5"
   },
   "dependencies": {
+    "@iconscout/unicons": "^4.2.0",
     "@tailwindcss/vite": "^4.1.11",
     "jquery": "^3.7.1",
     "swiper": "^11.2.10"

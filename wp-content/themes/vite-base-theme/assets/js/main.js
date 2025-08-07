@@ -1,4 +1,6 @@
 import '../css/style.css';
+// import '@iconscout/unicons/css/line.css';
+
 console.log('Vite + Tailwind + WordPress theme loaded !');
 
 // src/js/app.js
